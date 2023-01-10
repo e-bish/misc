@@ -1,0 +1,75 @@
+---
+title: "Steps in an Analysis"
+author: "Emily Bishop"
+date: '2023-01-10'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Steps to an analysis
+from Mark Scheuerell, FSH 549, winter 2023
+
+1. Define the question
+- It should be specific
+- It should be answerable with available data
+- It should come with a definition of success
+- It should not be designed to discriminate or cause harm 
+
+Useful questions to ask yourself
+- Could the question be answered with the available data?
+- Did you understand the context for the question and the scientific application?
+- Did you record the experimental design?
+
+2. Get the data
+- Data Sources (in order of confidence)
+- You collected your own
+- Collaborators
+- Public repositories
+
+3. Clean the data
+The most time consuming step!
+
+Useful questions to ask yourself:
+- Are the data tidy?
+- did you record the recipe for moving from raw to tidy data?
+- did you record all parameters, units, and functions applied to the data?
+
+4. Explore the data
+Do the data meet your expectations?
+- make juducious use of plots
+- also consider correlation matrices (corrplot())
+- beware of data mining!
+
+
+5. Fit statistical models
+- where to start? start with first principles. keep it simple
+
+6. Communicate the results
+- who's your audience? what's your medium?
+
+
+Exploratory analysis
+- Did you make univariate plots (histograms, density plots, boxplots)?
+- Did you consider correlations between variables (scatterplots)?
+- Did you check the units of all data points to make sure they are in the right range?
+-Did you try to identify any errors or miscoding of variables?
+
+
+Statistical analysis
+- did you identify the quantities of interest in your model?
+how did you select your model(s) (eg, information theory, cross validation)?
+- is this a correlative or causative study?
+
+Communication
+- did you describe the data set, experimental design, and question you are answering?
+- did you specify the model you are fitting?
+- does each table/figure communicate an important piece of information?
+
+Reproducibility
+- Did you create a script that reproduces all your analyses?
+- Did you save the raw and processed versions of your data?
+- Did you record all versions of the software you used to process the data?
+- did you try to have someone else run your analysis code?
